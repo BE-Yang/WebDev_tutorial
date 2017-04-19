@@ -19,7 +19,7 @@
 h1,h2,h3 {
     font-family:Lato, sans-serif;
 }
-
+//Background gradient for navbar and title
 .navbar, .home-callout {
     background: #83a4d4;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #83a4d4, #b6fbff);  /* Chrome 10-25, Safari 5.1-6 */
@@ -30,8 +30,33 @@ h1,h2,h3 {
     border:none;
 }
 
+//Moving homepage brand up to cover gap
 .home-callout {
     margin-top:-20px;
     padding-top:50px;
     padding-bottom:100px;
+}
+
+/*
+//The CSS way of grouping the classes and element to set the property
+.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
+    color:white;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-nav > li > a:hover
+ {
+    color:white;
+    opacity:0.6;
+}
+*/
+
+//SCSS Method of to set the properites the SCSS 
+.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
+    color:white;
+    
+    &:hover{
+        color:white;
+        opacity:0.6;
+    }
+
 }
