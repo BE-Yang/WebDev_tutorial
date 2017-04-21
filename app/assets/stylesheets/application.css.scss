@@ -15,7 +15,11 @@
  */
  @import 'bootstrap-sprockets';
  @import 'bootstrap';
- 
+
+//importing Font Awesome for icons 
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
 h1,h2,h3 {
     font-family:Lato, sans-serif;
 }
